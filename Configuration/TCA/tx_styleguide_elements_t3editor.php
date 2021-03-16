@@ -104,6 +104,18 @@ return [
                 'rows' => 7,
             ],
         ],
+        't3editor_2' => [
+            'exclude' => 1,
+            'label' => 't3editor_2',
+            'description' => 'readOnly=true format=html, rows=7',
+            'config' => [
+                'type' => 'text',
+                'renderType' => 't3editor',
+                'format' => 'html',
+                'rows' => 7,
+                'readOnly' => true,
+            ],
+        ],
         't3editor_reload_1' => [
             'exclude' => 1,
             'label' => 't3editor_reload_1',
@@ -231,7 +243,7 @@ return [
         '0' => [
             'showitem' => '
                 --div--;t3editor,
-                    t3editor_1,
+                    t3editor_1, t3editor_2,
                     t3editor_reload_1,
                 --div--;in inline,
                     t3editor_inline_1,
